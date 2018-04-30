@@ -12,7 +12,8 @@ A simple mathematical approach to resize images (php 5.3 or above)
 
     Or you can execute this php file once the image is uploaded.
 
-    Step 1. Use a any query to get the image file name like in below
+    Step 1. Use a any query to get the image file name like in below.
+    
 <?php
     include_once '../conn.php';
     $get_last_img = "
