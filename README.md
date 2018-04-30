@@ -13,27 +13,30 @@ A simple mathematical approach to resize images (php 5.3 or above)
     Or you can execute this php file once the image is uploaded.
 
     Step 1. Use a any query to get the image file name like in below.
-    
-#<?php
-#    include_once '../conn.php';
-#    $get_last_img = "
-#    SELECT
-#    REPLACE(img_path, '/uploads/', '') AS img_path
-#    FROM image
-#    ORDER BY img_id DESC
-#    LIMIT 1
-#    ";
-#
-#    $result_last_img_path = $conn->query($get_last_img_path);
-#   if ($result_last_im->num_rows > 0) {
-#        while ($row = $result_last_img->fetch_assoc()) {
-#            $img_path = $row["img_path"];
-#            }
-#            echo $img_path . "image is available to resize";
-#    } else {
-#        echo "Image is not found";
-#    }
-#?>
+
+=====================================================================
+
+<?php
+    include_once '../conn.php';
+    $get_last_img = "
+    SELECT
+    REPLACE(img_path, '/uploads/', '') AS img_path
+    FROM image
+    ORDER BY img_id DESC
+    LIMIT 1
+    ";
+
+    $result_last_img_path = $conn->query($get_last_img_path);
+    if ($result_last_im->num_rows > 0) {
+        while ($row = $result_last_img->fetch_assoc()) {
+            $img_path = $row["img_path"];
+            }
+            echo $img_path . "image is available to resize";
+    } else {
+        echo "Image is not found";
+    }
+?>
+=====================================================================
 
     Step 2. Assign image name variable to $source_url variable in line #3
     example -
