@@ -1,6 +1,8 @@
 # php-image-resizer with aspect ratio
 A simple mathematical approach to resize images (php 5.3 or above)
 
+<h3><a href="https://plugins.nayague.com/easy-php-image-resizer/" target="_blank">Live example<a/></h3>
+
 1. Download "php-image-resizer.php" and copy it into your image directory.
     example 1 - uploads/php-image-resizer.php
     example 2 - images/php-image-resizer.php
