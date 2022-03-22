@@ -51,8 +51,8 @@ if ($width > $after_width) {
     $imgResized = imagescale($img, $after_width, $after_height, $quality);
     
     //now save the resized image with a suffix called "-resized" and with its extension. 
-//    imagejpeg($imgResized, $filename . '-resized.'.$extension);
-    imagejpeg($imgResized, $filename . '.'.$extension);
+    //imagejpeg($imgResized, $filename . '-resized.'.$extension);     
+    imagejpeg($imgResized, $filename . '.'.$extension, 0);
     
     //Finally frees any memory associated with image
     //**NOTE THAT THIS WONT DELETE THE IMAGE
